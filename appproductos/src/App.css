@@ -1,0 +1,33 @@
+/* Estilos generales */
+.App {
+  text-align: center;
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+/* Añade esto al final de tu App.css */
+
+/* Contenedor principal - Diseño horizontal */
+.contenedor-principal {
+  display: flex;           /* Activa flexbox */
+  overflow-x: auto;        /* Scroll horizontal si es necesario */
+  gap: 20px;               /* Espacio entre cartas */
+  padding: 20px 10px;      /* Padding interno */
+  scrollbar-width: thin;   /* Firefox - scrollbar delgada */
+}
+
+/* Personalizar scrollbar (Chrome/Safari) */
+.contenedor-principal::-webkit-scrollbar {
+  height: 6px;
+}
+.contenedor-principal::-webkit-scrollbar-thumb {
+  background: #2a9d8f;
+  border-radius: 3px;
+}
+
+/* Ajustes para las cartas */
+.contenedor-producto {
+  flex: 0 0 auto;         /* Evita que se estiren o encojan */
+  width: 300px;           /* Ancho fijo */
+  margin: 0;              /* Elimina el margen original */
+}
